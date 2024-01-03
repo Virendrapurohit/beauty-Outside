@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact-8</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="shortcut icon" href="images/contact.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Content here -->
+  <div class="d-flex justify-content-center">
+    <img src="images/Logo.png" class="img-fluid p-2 mx-2 zoomimg" alt="logo" />
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"  aria-expanded="false"aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <img src="images/bars-solid.svg" class="toggle-icon" alt="icon"/>
+    </button>
+  </div>
+  <!-- Navbar (sit on top) -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container justify-content-center">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav text-lg-center fw-bold navbarone">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="file:///C:/Users/CT_USER/Documents/8/index.html"
+              target="_blank" style="color: #3f136b">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">PRICING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">SHOP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--------- contact-peage --------->
+  <div class="contact-peage">
+    <div class="container">
+            <form action="#" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-12 col-lg-7">
+                <h1 class="peage-1 py-3">Contact Us</h1>
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <i class="fa fa-user"></i>
+                    <label>Name</label>
+                    <input type="" class="form-control" name="fullName" id="Name" pattern="[A-z]{4,25}"
+                    title="4 to 25 lowercase letters" />
+                    <label class="validation-error hide text-danger fw-medium" id="NameValidationError"> *Please Enter your Name</label>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <i class="fa fa-envelope"></i>
+                    <label>Email</label>
+                    <input type="email" class="form-control" name="emailcode" id="Email" autocomplete="on" />
+                    <label class="validation-error hide text-danger fw-medium" id="EmailValidationError">*Please Enter your Email</label>
+                  </div>
+                  <div class="container form-container">
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-6 form-group">
+                        <i class="fa fa-phone"></i>
+                        <label>Phone</label>
+                        <input type="tel" id="Phone" class="form-control" pattern="[0-9]{10}" title="Ten digits code"
+                        autocomplete="off" />
+                        <label class="validation-error hide text-danger fw-medium" id="PhoneValidationError">*Please Enter your Phone No.</label>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-6 form-group">
+                        <div class="row">
+                          <div>
+                            <i class="fa fa-book"></i>
+                            <label>Qualification</label>
+                            <input list="Qua" class="form-control fw-medium" id="Qualification" placeholder="B.Tech">
+                            <label class="validation-error hide text-danger fw-medium" id="QualificationValidationError">*Please Select your Qualification</label>
+                            <datalist id="Qua">
+                              <option value="Bsc Computer Science">
+                              <option value="BCA">
+                              <option value="B.com">
+                              <option value="BBA">
+                              <option value="BE">
+                              <option value="Bsc Maths">
+                            </datalist>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-12 form-group">
+                        <div class="row">
+                          <div>
+                            <i class="fa  fa-road"></i>
+                            <label>Address</label>
+                            <textarea class="form-control" id="Address"></textarea>
+                            <label class="validation-error hide text-danger fw-medium" id="AddressValidationError">*Please Enter your Address</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-6 form-group">
+                        <div>
+                          <label>Contry</label>
+                          <i class="fa fa-globe"></i>
+                          <input list="Con" class="form-control fw-medium" id="Contry">
+                          <label class="validation-error hide text-danger fw-medium" id="ContryValidationError">*Please Select your Contry</label>
+                          <datalist id="Con">
+                            <option value="INDIA">
+                            <option value="Germany">
+                            <option value="Canada">
+                            <option value="Australia">
+                            <option value="United States">
+                          </datalist>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-6 form-group">
+                        <div>
+                          <label>State</label>
+                          <i class="fa fa-globe"></i>
+                          <input list="Sta" class="form-control fw-medium" id="State">
+                          <label class="validation-error hide text-danger fw-medium" id="StateValidationError">*Please Select your State</label>
+                          <datalist id="Sta">
+                            <option value="Rajasthan">
+                            <option value="Andhra Pradesh">
+                            <option value="Punjab">
+                            <option value="Sikkim">
+                            <option value="Assam">
+                          </datalist>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-6 form-group">
+                        <div>
+                          <label>Pincode</label>
+                          <i class="fa  fa-list-ol"></i>
+                          <input type="pin" class="form-control" id="Pincode" pattern="^\d{5}(-\d{4})?$"
+                          title="five digits code">
+                          <label class="validation-error hide text-danger fw-medium" id="PincodeValidationError">*Please Enter your Pincode</label>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-6 form-group">
+                        <div>
+                          <label>Experience</label>
+                          <i class="fa fa-cc-mastercard"></i>
+                          <input type="text" class="form-control" id="Experience" placeholder="Freher" autocomplete="on">
+                          <label class="validation-error hide text-danger fw-medium" id="ExperienceValidationError">*Please Enter your Experience</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-md-6 col-lg-6 form-group">
+                        <div>
+                          <label>Current yearly CTC</label>
+                          <i class="fa fa-paper-plane"></i>
+                          <input list="CTC" class="form-control fw-medium" id="CurrentCTC">
+                          <label class="validation-error hide text-danger fw-medium" id="CurrentCTCValidationError">*Please Enter
+                            your Current yearly CTC</label>
+                          <datalist id="CTC">
+                            <option value="7 LPA in hand salary">
+                            <option value="8 LPA in hand salary">
+                            <option value="8.5 LPA in hand salary">
+                            <option value="9 LPA in hand salary">
+                            <option value="10 LPA in hand salary">
+                          </datalist>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-6 form-group">
+                        <div>
+                          <label>Expected yearly CTC</label>
+                          <input list="ECTC" class="form-control fw-medium" id="ExpectedCTC">
+                          <label class="validation-error hide text-danger fw-medium" id="ExpectedCTCValidationError">*Please Enter your Expected yearly CTC</label>
+                          <datalist id="ECTC">
+                            <option value="8.5 LPA in hand salary">
+                            <option value="9 LPA in hand salary">
+                            <option value="10 LPA in hand salary">
+                            <option value="12LPA in hand salary">
+                            <option value="12.5 LPA in hand salary">
+                          </datalist>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <label>Upload CV</label>
+                      <i class="fa fa-image"></i>
+                      <input type="file" id="UploadCV" class="form-control" />
+                      <label class="validation-error hide text-danger fw-medium" id="UploadCVValidationError">*Please Upload CV File</label>
+                    </div>
+                    <div class="col- form-group">
+                      <i class="fa fa-venus-mars"></i>
+                      <label class="col-lg-2 mt-3">Gender</label>
+                      <div>
+                        <div class="col-lg-3 ">
+                          <div class=" d-flex gap-2">
+                            <input type="radio" class="form-check-input me-2" id="Gender" name="gender" value="Male"
+                              checked />
+                            <label class="form-check-label mb-2"  style="margin: -5px 0px;" for="Male">Male</label>
+                            <input type="radio" class="form-check-input m-1 me-1" id="Gender" name="gender" value="Female" />
+                            <label class="form-check-label" style="margin: -5px 0px;" for="Female">Female</label>
+                          </div>
+                          <br>
+                        </div>
+                        <div class="form-check  col-lg-7 col-12 text-lg-end align-text-top box-1">
+                          <input class="form-check-input float-none" type="checkbox" id="invalidCheck" checked />
+                          <label class="form-check-label" style="padding: 0px 8px">Do you agree to the terms?
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" id="show-element"
+                      class="text-light buttonfive px-4 py-1 my-3 border-0 rounded buttonfive float-start">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          </div>
+        </div>
+      <table class="list" id="employeeList">
+        <thead id="to-show" class="hidee">
+          <tr>
+            <th class="text-center bg-success"><i class="fa fa-user"></i> Name</th>
+            <th class="text-center bg-success"><i class="fa fa-envelope"></i> Email</th>
+            <th class="text-center bg-success"><i class="fa fa-phone"></i> Phone</th>
+            <th class="text-center bg-success"><i class="fa fa-book"></i> Qualification</th>
+            <th class="text-center bg-success"><i class="fa  fa-road"></i> Address</th>
+            <th class="text-center bg-success"><i class="fa fa-globe"></i> Contry</th>
+            <th class="text-center bg-success"><i class="fa fa-globe"></i> State</th>
+            <th class="text-center bg-success"><i class="fa  fa-list-ol"></i> Pincode</th>
+            <th class="text-center bg-success"><i class="fa fa-cc-mastercard"></i> Experience</th>
+            <th class="text-center bg-success"><i class="fa fa-paper-plane"></i> Current yearly CTC</th>
+            <th class="text-center bg-success">Expected yearly CTC</th>
+            <th class="text-center bg-success"><i class="fa fa-image"></i> Upload CV</th>
+            <th class="text-center bg-success"><i class="fa fa-venus-mars"></i> Gender</th>
+            <th class="text-center bg-success">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+  <h6 class="col-lg-5 d-flex justify-content-end pe-5 py-3" >
+    Location From google
+    <img src="images/map.png" style="width: 30px; height: 25px" />
+  </h6>
+  <!-- <-------Location From google ----------->
+  <div class="google-map pb-4">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14322.84785682304!2d72.9342335!3d26.173508549999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1698826468249!5m2!1sen!2sin"
+      width="780" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  
+  <!------------------ footer -------------
+   ---------------------------------------->
+  <div class="d-flex justify-content-center">
+    <img src="images/Logo.png" class="img-fluid p-2 mx-2 zoomimg" alt="logo" />
+  </div>
+  <div class="toggle-icon">
+    <ul class="list-inline d-flex gap-5 justify-content-center fw-medium">
+      <li>HOME</li>
+      <li>ABOUT</li>
+      <li>GALLERY</li>
+    </ul>
+    <ul class="list-inline d-flex gap-5 justify-content-center fw-medium">
+      <li>PRICING</li>
+      <li>SHOP</li>
+      <li>CONTACT</li>
+    </ul>
+  </div>
+  <div class="footer">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container justify-content-center">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav text-center fw-bold navbarone">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home" style="color: #3f136b">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">PRICING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+    <div class="container py-lg-5">
+      <div class="footer-bottam">
+        <span><a class="text-black text-decoration-none" href="#">&#169;Beauty Outside | All Rights Reserved
+            2017</a></span>
+        <span style="float: right"><a class="text-black text-decoration-none" href="index.html">Web Developed and
+            Managed by: Capsitech IT Services Pvt. Ltd</a></span>
+      </div>
+    </div>
+  </div>
+  <script src="mine.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

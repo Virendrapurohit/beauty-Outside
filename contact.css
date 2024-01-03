@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Lustria&display=swap");
+
+body{
+ font-family: "Lustria", serif;
+}
+body,html {
+  height: 100%;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+}
+/* <!-- Navbar (sit on top) --> */
+.navbarone {
+  gap: 35px;
+}
+.nav-link:hover {
+  font-weight: bold;
+  line-height: 21px;
+  border-bottom: 2px solid transparent;
+  border-color: #3f136b;
+}
+.zoomimg:hover{
+  transform: scale(1.1);
+}
+.navbar a:hover{
+  color: #3f136b;
+}
+.toggle-icon {
+  display: none;
+}
+.peage-1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.buttonfive {
+  background-color: #075aff;
+}
+.buttonfive:hover {
+  background-color: aqua;
+}
+.formerror {
+  font-size: 12px;
+}
+body >table{
+  width: 50%;
+  background-color: #bdebdc;
+  text-align: center;
+}
+.box-1{
+  margin-left: 15rem;
+  margin-top: -59px;
+}
+table.list{
+  width: 100%;
+}
+td,th{
+  border: 1px solid #dddddd;
+  padding: 8px;
+  font-size: 13px;
+}
+tr:nth-child(even),table.list thead>tr{
+  background-color: #dddddd;
+}
+label.validation-error{
+  font-size: 12px;
+  /* margin: 10px; */
+}
+.hide{
+  display: none;
+}
+label{
+  padding: 5px 5px;
+ }
+ .hidee{
+  display: none;
+}
+/* -----------Location From google-------- */
+.google-map {
+  display: flex;
+  justify-content: center;
+}
+/* -------------------footer-----------------
+---------------------------------------------*/
+.footer p {
+  border-top: 5px solid #f7f7f7;
+  padding: 17px 0px;
+  text-align: center;
+  border-bottom: 5px solid #f7f7f7;
+}
+/* ---------- Responsive website Layout start----------- */
+@media (min-width: 320px) and (max-width: 767px) {
+  .peage-1 {
+    font-size: 25px;
+  }
+  .toggle-icon {
+    display: block;
+  }
+  .navbarone {
+    gap: 0;
+    margin: 0 33px;
+  }
+  .navbar{
+    background-color: #e8d9ff;
+  }
+  .footer-bottam {
+    text-align: center;
+  }
+  .genderclass {
+    text-align: center;
+  }
+  .buttonfive {
+    margin: 0px 102px;
+    margin-top: 35px;
+  }
+  .body >table,th,td{
+    display: none;
+   }
+   .box-1 {
+    margin: 0px;
+  }
+}
